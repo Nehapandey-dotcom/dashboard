@@ -23,10 +23,9 @@ body{
   width: 100%;
   min-height: 100vh;
   color: #ffffff;
-  position: relative;
+  position: fixed;
   padding: 60px 50px;
   border-radius: 20px;
-  margin-right: 67px;
 }
 .mainHeading{
   font-size: 36px;
@@ -67,6 +66,7 @@ i.fi {
 .mainContent {
   padding: 70px 43px 40px 0px;
   width: 100%;
+  margin-left: 329px;
 }
 .dashboardHeading{
   font-size: 24px;
