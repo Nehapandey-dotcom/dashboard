@@ -1,0 +1,554 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.container {
+  background: #F8FAFF;
+}
+.main{
+  display: flex;
+}
+/* sidebar */
+.sidebar {
+  background: linear-gradient(180deg, #4285F4 0%, #3C83F9 100%);
+  max-width: 280px;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  position: relative;
+  padding: 60px 50px;
+  border-radius: 20px;
+  margin-right: 67px;
+}
+.mainHeading{
+  font-size: 36px;
+  font-weight: 700;
+}
+.navMenu{
+  list-style-type: none;
+  padding-top: 60px;
+}
+ul.navMenu li {
+  padding-bottom: 40px;
+}
+.linkTag{
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.linkTag.active,.linkTag.active i.fi{
+  font-weight: 700;
+}
+i.fi {
+  font-size: 17px;
+  margin-right: 20px;
+}
+.bottomMenu{
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.bottomMenu a{
+  color: #ffffff;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+/* Main Page */
+.mainContent {
+  padding: 70px 43px 40px 0px;
+  width: 100%;
+}
+.dashboardHeading{
+  font-size: 24px;
+}
+.DashboardHeader{
+  justify-content: space-between;
+  display: flex;
+}
+.profile {
+  display: flex;
+  font-family:Lato ;
+  align-items: center;
+}
+input[type="search"] {
+  font-size: 14px;
+  border: navajowhite;
+  font-family: 'Lato';
+  color: #B0B0B0;
+  border-radius: 10px;
+  padding: 7px 10px;
+}
+.search{
+  position: relative;
+  display: flex;
+    align-items: center;
+  margin-right: 13px;
+}
+.search i.fi {
+  font-size: 12px;
+  color: #858585;
+  position: absolute;
+  right: 0px;
+}
+.notiicationIcon {
+  margin-right: 27px;
+}
+.userProfile a img {
+  border-radius: 50%;
+}
+/* UpperCard Section */
+.uppercard {
+  margin-top: 40px;
+  display: flex;
+}
+.uppercard .cardSection{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card {
+  box-shadow: 3px 4px 11px 0px #62626226;
+  border: 2px solid #E0E0E0;
+  border-radius: 20px;
+  margin-right: 17px;
+  width: 100%;
+  padding: 18px 26px;
+  font-family: Lato;
+  background: #fff;
+}
+.vectorIcon{
+  width: 31px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.vectorIcon:hover {
+  transform: scale(1.2);
+}
+.vectorIcon img{
+  padding: 6.5px;
+
+}
+span.total {
+  font-size: 11px;
+  padding: 7px 0px;
+  display: block;
+}
+.cardBottom{
+  display: flex;
+  font-family: Open Sans;
+  align-items: center;
+  justify-content: space-between;
+}
+.amount {
+  font-size: 21px;
+  font-weight: 700;
+}
+.percent {
+  font-size: 10px;
+  font-family: Figtree;
+  color: #4AD15F;
+  padding: 4px 8px;
+  border-radius: 34px;
+  font-weight: 600;
+  background: #E9F9EB;
+}
+/* Chart Section */
+.chartSection{
+  border-radius: 20px;
+  border: 2px solid #E0E0E0;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 30px 40px 28px 40px;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.barChart{
+  max-height: 389px;
+  width: 100%;
+}
+.barChart canvas{
+  max-width: 932px !important;
+  height: 256px !important;
+}
+h3.chartHeading {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.chartDate{
+  padding-bottom: 31px;
+  font-size: 14px;
+  display: block;
+  color: #858585;
+}
+.timerange{
+  color: #858585;
+  font-size: 14px;
+  padding-bottom: 31px;
+}
+.bottomCard{
+  display: flex;
+  justify-content: space-between;
+}
+.chartSection.addProfile {
+  max-width: 480px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.controls {
+  border-radius: 50%;
+  padding: 10px 12px;
+}
+/* Login section */
+.LoginPage {
+  display: flex;
+  background: #F8FAFF;
+  min-height: 100vh;
+}
+
+.leftSide {
+  background: url(../public/leftside.png);
+  background-size: cover;
+  padding: 59px 72px;
+  background-repeat: no-repeat;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.logo{
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #fff;
+  font-size: 24px;
+}
+.loginMain h1{
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+}
+.logoSec {
+  max-width: 299px;
+  margin: 0 auto;
+  width: 100%;
+}
+.socialLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.error {
+  border: 1px solid red;
+  display: inline-flex;
+  padding: 5px 9px;
+  background: antiquewhite;
+  color: red;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.success {
+  border: 1px solid green;
+  display: inline-flex;
+  padding: 5px 9px;
+  background: lightgreen;
+  font-weight: 500;
+  font-size: 12px;
+  color: green;
+  margin-bottom: 20px;
+}
+.RightSide {
+  width: 50%;
+  padding-left: 93px;
+  display: flex;
+  align-items: center;
+}
+.signOption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2.signIn {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.formSection .subText {
+  font-size: 16px;
+  font-family: Lato;
+  padding-bottom: 28px;
+  display: block;
+}
+.form {
+  max-width: 422px;
+  width: 100%;
+}
+.accountSignin,.appleSignin {
+  background: #fff !important;
+  border: none;
+  padding: 8px 20px !important;
+  align-items: center !important;  
+  display: flex !important;
+  color: #858585 !important;
+  font-size: 12px !important;
+  height: unset !important;
+  margin: 0!important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  font-family: Montserrat !important;
+  width: 100% !important;
+}
+.accountSignin{
+  margin-right: 27px;
+}
+.accountSignin svg,.appleSignin svg{
+  max-width: 15px;
+  height: 15px;
+}
+button.google {
+  border: none;
+  color: #858585;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 20px;
+}
+.signinForm{
+  margin-top: 27px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 33px;
+  max-width: 422px;
+}
+.signinForm form label,.formInput,.forget,.register{
+  font-size: 16px;
+  font-family: Lato;
+}
+.signinForm form label{
+  display: block;
+  padding-bottom: 11px;
+}
+.formInput{
+  padding: 10px 16px ;
+  color: #000;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+.inputField {
+  padding-bottom: 21px;
+}
+.forget{
+  color: #346BD4;
+}
+.submitBtn {
+  font-size: 16px;
+  font-family: Montserrat;
+  color: #fff;
+  padding: 8px 0px;
+  border: 1px solid transparent;
+  border: none;
+  font-weight: 700;
+  background-color: #4285F4;
+  border-radius: 10px;
+  transition: 0.5s;
+  width: 100%;
+}
+.submitBtn:hover{
+  background-color: transparent;
+  color: #4285F4;
+  border: 1px solid #4285F4;
+}
+.register{
+  margin-top: 21px;
+  text-align: center;
+  color: #858585;
+}
+a.regiserLink {
+  color: #346BD4;
+}
+.socialLogo a{
+  transition: 0.5s;
+}
+.socialLogo a:hover{
+  transform: scale(1.2);
+}
+
+.custom-legend {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-legend li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.custom-legend li span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Add more styles as needed */
+.modalBtn{
+  border: none;
+}
+.modalHeading{
+  font-size: 20px;
+  font-family: Figtree;
+  font-weight: 600;
+  padding: 15px 24px ;
+}
+.modal { /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fff; /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+.modalForm{
+  max-width: 544px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.20), 0px 0px 32px -8px rgba(0, 0, 0, 0.12), 0px 32px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+.modalFormSection{
+  padding: 24px;
+  font-family: 'Figtree';
+}
+.navList{
+  display: flex;
+  margin-bottom: 22px;
+}
+.modalNav{
+  list-style-type: none;
+  padding-bottom: 12px;
+  width: 100%;
+  font-size: 16px;
+  margin-right: 53px;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+}
+.modalNav::before{
+  position: absolute;
+  background-color: #3C83F9;
+  height: 4px;
+  border-radius: 30px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+}
+.modalNav:last-child{
+  margin-right: 0px;
+}
+.modalformInput{
+  margin-bottom: 24px;
+}
+.modalformInput label{
+  display: block;
+  font-family: 'Figtree';
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.modalformInput input{
+  width: 100%;
+  border: 1px solid #F2F2F2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: #999CA0;
+  font-family: 'Figtree';
+}
+.modalNext .next{
+  background-color: #3C83F9;
+  color: white;
+  font-size: 14px;
+  margin-top: 26px;
+  padding: 11px 17px;
+  font-family: 'Figtree';
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #3C83F9;
+}
+.modalNext .back{
+  color: #231F20;
+  font-size: 14px;
+  margin-top: 26px;
+  padding: 11px 17px;
+  font-family: 'Figtree';
+  margin-right: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #999CA0;
+}
+.modalNext{
+  display: flex;
+  justify-content: end;
+}
+.bottomCard .chartSection{
+  max-width: 480px;
+  width: 100%;
+}
+h2.username {
+  font-weight: 600;
+  font-family: 'Figtree';
+  padding: 18px 0px 36px 0px;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+}
+.contact ul{
+  list-style-type: none;
+}
+.contact ul li{
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    font-size: 14px;
+    font-family: 'Figtree';
+}
+.formOutput {
+  padding-right: 40px;
+  padding-bottom: 22px;
+}
+.contact ul li img{
+  margin-right: 12px;
+}

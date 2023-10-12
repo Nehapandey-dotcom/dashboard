@@ -1,0 +1,40 @@
+@media  screen and ( max-width:991px) {
+    .RightSide{
+        padding-left: 44px;
+    }   
+}
+@media  screen and ( max-width:767px){
+    .LoginPage{
+        display: block;
+        background-attachment: fixed;
+    }
+
+    .RightSide,.leftSide{
+        width: 100%;
+        justify-content: center;
+    } 
+    .RightSide{
+        margin-top: 35px;
+        padding-left: 0px;
+    }
+    .leftSide{
+        background-image: none;
+        padding: 28px 30px;
+        background-color: #4285F4;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .logoSec{
+        max-width: 160px;
+    }
+    .loginMain h1{
+        font-size: 40px;
+    }
+    .socialLogo{
+        margin-top: 20px;
+    }
+    .socialLogo a img {
+        width: 30px;
+    }
+}
