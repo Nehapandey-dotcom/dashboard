@@ -23,8 +23,8 @@ function BottomCard() {
                         <div className="details">
                             <div className="contact">
                                 <ul>
-                                    <li><img src="Button.png"/>{formData.phone}</li>
-                                    <li><img src="email.png"/>{formData.email}</li>
+                                    {formData.phone &&<li><img src="Button.png"/>{formData.phone}</li>}
+                                    {formData.email && <li><img src="email.png"/>{formData.email}</li>}
                                 </ul>
                             </div>
                             <div className="contact">

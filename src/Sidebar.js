@@ -1,8 +1,12 @@
 import Navigation from "./Navigation";
-function Sidebar(){
+import { useState } from "react";
+function Sidebar({isActive}){
+    const style=isActive;
+    
     return(
         <>
-        <div className="sidebar">
+        
+        <div className={`sidebar ${style===true ? 'active' : 'inactive'}`}>
             <div className="sidebarMenu">
                 <h1 className="mainHeading">Board.</h1>
                 <Navigation/>

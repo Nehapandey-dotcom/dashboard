@@ -25,7 +25,6 @@ function FormComponent({ onSubmit }) {
 
     const formSubmit = (e) => {
         e.preventDefault();
-        // Call the onSubmit callback with the form data
         onSubmit(formData);
     };
 

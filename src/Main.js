@@ -6,7 +6,7 @@ import Users from './Landing/Users';
 import Settings from './Landing/Settings';
 function Main() {
     return (
-        <>
+        <>      
                 <Routes>
                     <Route path="/" element={<Dashboard />}/>
                     <Route path="/transactions" element={<Transactions />} />
