@@ -172,7 +172,7 @@ input[type="search"] {
   border: 2px solid #E0E0E0;
   border-radius: 20px;
   margin-right: 17px;
-  max-width: 24%;
+  max-width: 23.8%;
   width: 100%;
   padding: 18px 26px;
   font-family: Lato;
@@ -689,5 +689,18 @@ h2.username {
 @media screen and (max-width:867px) {
   .cardBottom{
     display: block;
+  }
+}
+@media screen and (max-width:1432px) {
+  .card{
+    max-width: 23%;
+  }
+}
+@media screen and (max-width:767px) {
+  .card{
+    max-width: 47%;
+  }
+  .card:nth-child(even){
+    margin-right: 0;
   }
 }
