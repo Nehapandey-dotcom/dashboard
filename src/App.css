@@ -110,7 +110,10 @@ i.fi {
   justify-content: space-between;
   display: flex;
 }
-
+.DashboardHeader button{
+  border: none;
+  background: none;
+}
 .profile {
   display: flex;
   font-family: Lato;
@@ -160,6 +163,7 @@ input[type="search"] {
 
 .uppercard .cardSection {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -168,7 +172,7 @@ input[type="search"] {
   border: 2px solid #E0E0E0;
   border-radius: 20px;
   margin-right: 17px;
-  max-width: 274px;
+  max-width: 24%;
   width: 100%;
   padding: 18px 26px;
   font-family: Lato;
@@ -217,6 +221,7 @@ span.total {
   color: #4AD15F;
   padding: 4px 8px;
   border-radius: 34px;
+  display: inline;
   font-weight: 600;
   background: #E9F9EB;
 }
@@ -679,4 +684,10 @@ h2.username {
 
 .contact ul li img {
   margin-right: 12px;
+}
+
+@media screen and (max-width:867px) {
+  .cardBottom{
+    display: block;
+  }
 }
