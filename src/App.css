@@ -18,8 +18,7 @@ body{
 }
 /* sidebar */
 .sidebar {
-  /* background: linear-gradient(180deg, #4285F4 0%, #3C83F9 100%); */
-  background: #4AD15F;
+  background: linear-gradient(180deg, #4285F4 0%, #3C83F9 100%);
   max-width: 280px;
   width: 100%;
   min-height: 100vh;
